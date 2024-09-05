@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #791E94;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 20px;
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: #FFFFF2;
+    font-size: 6vmin;
+    text-shadow: 0 0 3rem rgba(0, 0, 0, 0.10);
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    background-color: #41D3BD;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+    font-size: 8vmin;
+    color: #791E94;
+}
+
+#btn-reset,
+#btn-new{
+    padding: 1rem;
+    font-size: 20px;
+    background-color: #407899;
+    color: #FFFFF2;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.winner-container{
+    color: #FFFFF2;
+    font-size: 3vmin;
+    padding-top: 20px;
+    text-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.hide{
+    display: none;
+}
+
+.last-txt{
+    color: white;
+    margin-top: 35px;
+    font-size: smaller;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    h1{
+        font-size: 8vmin;
+    }
+
+    .game{
+        height: 80vmin;
+        width: 80vmin;
+        gap: 1vmin;
+    }
+
+    .box{
+        height: 22vmin;
+        width: 22vmin;
+        font-size: 10vmin;
+    }
+
+    #btn-reset, #btn-new{
+        padding: 0.8rem;
+        font-size: 18px;
+    }
+
+    .winner-container{
+        font-size: 4vmin;
+    }
+}
+
+@media (max-width: 480px) {
+    h1{
+        font-size: 10vmin;
+        padding-top: 20px;
+    }
+
+    .game{
+        height: 100vmin;
+        width: 100vmin;
+        gap: 0.5vmin;
+    }
+
+    .box{
+        height: 25vmin;
+        width: 25vmin;
+        font-size: 12vmin;
+    }
+
+    #btn-reset, #btn-new{
+        padding: 0.5rem;
+        font-size: 16px;
+    }
+
+    .winner-container{
+        font-size: 5vmin;
+    }
+}
